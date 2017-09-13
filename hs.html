@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0"; name="viewport" />
+<meta content="telephone=no" name="format-detection" />
+<title>swiper.js手机触屏滑动选项卡标签切换代码</title>
+
+<link rel="stylesheet" href="js/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+<style type="text/css">
+	*{margin:0;padding:0;font-family: "微软雅黑";}
+		.wrap{margin:0 auto;}
+		.tabs{
+			height:32px;
+			background: #fff;
+			width: 100%;
+			padding-top: 8px;
+			text-align: center;
+			position: fixed;
+			z-index: 1000;
+			top:0px;
+			box-shadow: 0px 0.01rem 0.08rem #999;
+		}
+		.tabs .part{
+			display:block;
+			float:left;
+			width:50%;
+			color:#fff;
+			text-align:center;
+			height:0.2rem;
+		}
+		.tabs a{
+			height:0.2rem;
+			width:70px;
+			display:block;
+			color: #5BA997;
+			text-align:center;
+			margin:0 auto;
+			font-size:16px;
+			text-decoration:none;
+			padding-bottom: 2px;
+		}
+		.tabs span.active a{
+			color: #5BA997;
+			border-bottom: 2px solid  #5BA997;
+		}
+
+		.swiper-container{width:100%;height:13rem;border-top:0;margin-top:10px!important}
+		.swiper-slide{width:100%;background:none;color:#373737;}
+		.algn{
+			display: block;
+			height:20rem;
+			background: #fff;
+			width:100%;
+			text-align: center;
+			font-size:0.2rem;
+			text-align: center;
+			line-height: 7.5rem;
+		}
+</style>
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+ <script>
+	$(document).ready(function(){
+  $(".icon-xinxi").click(function(){
+    $(".hide").show();
+  });
+  $(".icon-cha").click(function(){
+    $(".hide").hide();
+  });
+});
+</script>
+</head>
+
+<body class="bgc_gray">
+
+<div class="pg-main">
+
+	<div id="wrapper">
+		<!--header end-->
+		<div class="wrap">
+			<div class="tabs">
+				<span class="part active"><a href="#" hidefocus="true" >广场</a></span>
+				<span class="part"><a href="#" hidefocus="true">关注</a></span>
+				<!-- <span class="part"><a href="#" hidefocus="true">个人免费</a></span> -->
+			</div>
+
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide swiper-slide-visible swiper-slide-active">
+						<div class="content-slide">
+							<div class="contain">
+	<div class="top">
+		<span></span>
+		<i>精品推荐</i>
+	</div>
+	<div class="about">
+		<div class="toux">
+			<a href=""><img src="img/1-10.jpg" alt=""></a>
+			<ul>
+				<li>BAOBAO</li>
+				<li>09/06 12:57:34</li>
+			</ul>
+			<ul>
+				<li>8粉丝</li>
+				<li><a href="sign-in.html"><i class="iconfont icon-jiahao"></i>关注</a></li>
+			</ul>
+		</div>
+		<p>怒放的生命...</p>
+		<div class="about_img">
+			<img src="img/1-10.jpg" alt="">
+			<img src="img/1-1.jpg" alt="">
+			<img src="img/1-3.jpg" alt="">
+		</div>
+		<div class="xx"><i class="iconfont icon-xinxi"></i></div>
+		<b><i class="iconfont icon-xin"></i>&nbsp;&nbsp;村姑，pppxxx，Self-pleasure</b>
+	</div>
+	<div class="about about1">
+		<div class="toux">
+			<a href=""><img src="img/1-9.jpg" alt=""></a>
+			<ul>
+				<li>蜗牛小神豆</li>
+				<li>09/05 19:23:34</li>
+			</ul>
+			<ul>
+				<li>8粉丝</li>
+				<li><a href="sign-in.html"><i class="iconfont icon-jiahao"></i>关注</a></li>
+			</ul>
+		</div>
+		<p>今日，晴空万里</p>
+		<div class="about_img">
+			<img src="img/1-4.jpg" alt="">
+		</div>
+		<div class="xx"><i class="iconfont icon-xinxi"></i></div>
+		<b><i class="iconfont icon-xin"></i>&nbsp;&nbsp;村姑，Baadd，Lark_Ho</b>
+	</div>
+
+	<div class="about about2">
+		<div class="toux">
+			<a href=""><img src="img/1-7.jpg" alt=""></a>
+			<ul>
+				<li>Self_pleaser</li>
+				<li>09/05 16:53:34</li>
+			</ul>
+			<ul>
+				<li>20粉丝</li>
+				<li><a href="sign-in.html"><i class="iconfont icon-jiahao"></i>关注</a></li>
+			</ul>
+		</div>
+		<p>橙色系</p>
+		<div class="about_img">
+			<img src="img/1-7.jpg" alt="">
+			<img src="img/1-8.jpg" alt="">
+			<img src="img/1-6.jpg" alt="">
+		</div>
+		<div class="xx"><i class="iconfont icon-xinxi"></i></div>
+		<b><i class="iconfont icon-xin"></i>&nbsp;&nbsp;村姑，bajkkj，Lark_Ho</b>
+	</div>
+
+
+
+	<div class="about about3">
+		<div class="toux">
+			<a href=""><img src="img/1-6.jpg" alt=""></a>
+			<ul>
+				<li>萌妹子</li>
+				<li>09/05 12:53:34</li>
+			</ul>
+			<ul>
+				<li>25粉丝</li>
+				<li><a href="sign-in.html"><i class="iconfont icon-jiahao"></i>关注</a></li>
+			</ul>
+		</div>
+		<p>来一波壁纸</p>
+		<div class="about_img">
+			<img src="img/2-11.jpg" alt="">
+			<img src="img/2-12.jpg" alt="">
+			<img src="img/2-13.jpg" alt="">
+			<img src="img/1-7.jpg" alt="">
+			<img src="img/1-8.jpg" alt="">
+			<img src="img/1-6.jpg" alt="">
+		</div>
+		<div class="xx"><i class="iconfont icon-xinxi"></i></div>
+		<b><i class="iconfont icon-xin"></i>&nbsp;&nbsp;村姑？，青墨，Lark_Ho</b>
+	</div>
+
+
+	<div class="about about4">
+		<div class="toux">
+			<a href=""><img src="img/1-10.jpg" alt=""></a>
+			<ul>
+				<li>大妹子</li>
+				<li>09/05 12:53:34</li>
+			</ul>
+			<ul>
+				<li>0粉丝</li>
+				<li><a href="sign-in.html"><i class="iconfont icon-jiahao"></i>关注</a></li>
+			</ul>
+		</div>
+		<p>送的晴空万里</p>
+		<div class="about_img">
+			<img src="img/2-11.jpg" alt="">
+		</div>
+		<div class="xx"><a href="sign-in.html"><i class="iconfont icon-xinxi"></i></a></div>
+	</div>
+
+</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="content-slide">
+						<p class="algn">
+						<img src="img/sign_right0.png" alt="">
+						</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+
+var tabsSwiper;
+tabsSwiper = new Swiper('.swiper-container', {
+	speed : 500,
+	onSlideChangeStart : function() {
+		$(".tabs .active").removeClass('active');
+		$(".tabs span").eq(tabsSwiper.activeIndex).addClass('active');
+	}
+});
+
+$(".tabs span").on('touchstart mousedown', function(e) {
+	e.preventDefault()
+	$(".tabs .active").removeClass('active');
+	$(this).addClass('active');
+	tabsSwiper.swipeTo($(this).index());
+
+});
+
+$(".tabs span").click(function(e) {
+	e.preventDefault();
+});
+
+
+});//end
+</script>
+
+<div class="hide">
+		<i class="iconfont icon-cha"></i>
+		请先登录
+</div>
+
+<footer>
+<ul>
+	<li>
+		<a href="index.html"><i class="iconfont icon-shuihu"></i>
+		<p>花儿</p>
+		</a>
+	</li>
+	<li>
+		<a href=""><i class="iconfont icon-zhalan"></i>
+		<p>花说</p>
+		</a>
+	</li>
+	<li>
+		<a href="life1.html"><i class="iconfont icon-iconset0217"></i>
+		<p>LIFE</p>
+		</a>
+	</li>
+	<li>
+		<a href="hx.html"><i class="iconfont icon-shuaziline"></i>
+		<p>花现</p>
+		</a>
+	</li>
+	<li>
+		<a href="wo.html"><i class="iconfont icon-iconcopy"></i>
+		<p>我</p>
+		</a>
+	</li>
+</ul>
+</footer>
+</body>
+</html>
